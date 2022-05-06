@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: $Roboto;
+  font-size: 14px;
+  line-height: 1.14;  //16px
+  letter-spacing: 0.03em;
+  color: var(--primary-tex-color);
+
+  background-color: var(--primary-background);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// input автозаповнення background-color!!!
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px inherit inset;
+  -webkit-text-fill-color: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}

@@ -1,0 +1,36 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: inherit;
+  border-radius: 50%;
+  fill: var(--icon-color);
+
+  transition: fill 250ms, background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #ffff;
+    background-color: var(--accent-color);
+  }
+}
+
+// FOOTER
+.social-links__link--bgc {
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 10%);
+}

@@ -1,0 +1,33 @@
+.specifics__list {
+  display: flex;
+  column-gap: 30px;
+}
+.specifics__item {
+  //  max-width: 270px; 
+  flex-basis: calc(100% / 4 - 30px);
+  // height: 100px;
+  // overflow: auto; 
+}
+
+.specifics__icon {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.specifics__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.specifics__description {
+  line-height: 1.7;
+  color: var(--secondary-tex-color);
+  overflow: hidden;
+}

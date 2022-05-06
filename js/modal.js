@@ -26,9 +26,9 @@
 })();
 
 // form footer placeholder
-document.querySelector(".footer-input").addEventListener("focusin", (e) => {
+document.querySelector("[data-input]").addEventListener("focusin", (e) => {
   e.currentTarget.placeholder = e.currentTarget.dataset.placeholder;
 });
-document.querySelector(".footer-input").addEventListener("focusout", (e) => {
+document.querySelector("[data-input]").addEventListener("focusout", (e) => {
   e.currentTarget.placeholder = " ";
 });

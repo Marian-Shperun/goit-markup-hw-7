@@ -13,22 +13,3 @@
   }
 })();
 
-// form
-(() => {
-  document.querySelector(".js-speaker-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    new FormData(e.currentTarget).forEach((value, name) =>
-      console.log(`${name}: ${value}`)
-    );
-    e.currentTarget.reset();
-  });
-})();
-
-// form footer placeholder
-document.querySelector("[data-input]").addEventListener("focusin", (e) => {
-  e.currentTarget.placeholder = e.currentTarget.dataset.placeholder;
-});
-document.querySelector("[data-input]").addEventListener("focusout", (e) => {
-  e.currentTarget.placeholder = " ";
-});

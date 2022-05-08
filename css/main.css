@@ -610,7 +610,7 @@ input:-webkit-autofill:active {
 .wedo__link {
   color: #fff;
 }
-.wedo__link-description {
+.wedo__link-text {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -631,25 +631,15 @@ input:-webkit-autofill:active {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-}
-.wedo__link-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.wedo__link:hover .wedo__link-description {
+.wedo__link:hover .wedo__link-text {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-}
-.wedo__link:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -658,6 +648,14 @@ input:-webkit-autofill:active {
 .wedo__link img {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+}
+.wedo__link:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
 /* TEAM **************************************************************************/

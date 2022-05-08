@@ -21,7 +21,7 @@
 .wedo__link {
   color: #fff;
 
-  &-description {
+  &-text {
     position: absolute;
     bottom: 0;
 
@@ -34,8 +34,7 @@
 
     transform: translateY(0);
     transition: transform 250ms ease-in-out;
-  }
-  &-text {
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -43,17 +42,17 @@
     text-transform: uppercase;
   }
 
-  &:hover &-description {
+  &:hover &-text {
     transform: translateY(100%);
-    transition: transform 250ms ease-in-out;
-  }
-  &:hover img {
-    transform: scale(1.2);
     transition: transform 250ms ease-in-out;
   }
 
   img {
     transition: all 250ms ease-in-out;
+  }
+  &:hover img {
+    transform: scale(1.2);
+    transition: transform 250ms ease-in-out;
   }
 }
 
